@@ -564,13 +564,13 @@ public class MLUI extends JFrame {
 
     // Create controls for Media Player object
     private void createControls(MediaPlayer mp) {
-	ImageIcon startIcon = new ImageIcon("sm_media_skip_backward.png");
-	ImageIcon rewIcon = new ImageIcon("sm_media_seek_backward.png");
-	ImageIcon playIcon = new ImageIcon("sm_media_playback_start.png");
-	ImageIcon pauseIcon = new ImageIcon("sm_media_playback_pause.png");
-	ImageIcon stopIcon = new ImageIcon("sm_media_playback_stop.png");
-	ImageIcon fwdIcon = new ImageIcon("sm_media_seek_forward.png");
-	ImageIcon endIcon = new ImageIcon("sm_media_skip_forward.png");
+	ImageIcon startIcon = new ImageIcon(MusicLibrary.class.getResource("sm_media_skip_backward.png"));
+	ImageIcon rewIcon = new ImageIcon(MusicLibrary.class.getResource("sm_media_seek_backward.png"));
+	ImageIcon playIcon = new ImageIcon(MusicLibrary.class.getResource("sm_media_playback_start.png"));
+	ImageIcon pauseIcon = new ImageIcon(MusicLibrary.class.getResource("sm_media_playback_pause.png"));
+	ImageIcon stopIcon = new ImageIcon(MusicLibrary.class.getResource("sm_media_playback_stop.png"));
+	ImageIcon fwdIcon = new ImageIcon(MusicLibrary.class.getResource("sm_media_seek_forward.png"));
+	ImageIcon endIcon = new ImageIcon(MusicLibrary.class.getResource("sm_media_skip_forward.png"));
 
 	mp.setOnReady(new Runnable() {
 	    @Override

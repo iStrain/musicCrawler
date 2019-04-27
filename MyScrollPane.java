@@ -31,7 +31,7 @@ class MyScrollPane extends JScrollPane {
 	this.getViewport().setScrollMode(JViewport.BLIT_SCROLL_MODE);
 	Toolkit tk = Toolkit.getDefaultToolkit();
 	MediaTracker mt = new MediaTracker(this);
-	this.image = tk.getImage("Background.jpg");
+	this.image = tk.getImage(MusicLibrary.class.getResource("background.jpg"));
 	mt.addImage(image, 0);
 	try {
 	    mt.waitForAll();
